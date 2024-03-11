@@ -125,10 +125,10 @@ const getArticles = async (req, res) => {
 
 const postArticles = async (req, res) => {
   let article = new Article({
-    //TODO Fill in new article model
     coordinates: req.body.coordinates,
     title: req.body.title,
     description: req.body.description,
+    year: req.body.year,
     color: req.body.color,
     tag: req.body.tag,
     link: req.body.link,
@@ -197,14 +197,27 @@ const putArticle = async (req, res, next) => {
   //await findArticle(req, res, next)
   let article = await Article.findById(req.params.articleId);
   res.article = article;
-  if (req.body.name != null) {
-    res.article.name = req.body.name;
+
+  if (req.body.coordinates != null) {
+    res.article.coordinates = req.body.coordinates;
   }
-  if (req.body.genre != null) {
-    res.article.genre = req.body.genre;
+  if (req.body.title != null) {
+    res.article.title = req.body.title;
   }
   if (req.body.description != null) {
     res.article.description = req.body.description;
+  }
+  if (req.body.year != null) {
+    res.article.year = req.body.year;
+  }
+  if (req.body.color != null) {
+    res.article.color = req.body.color;
+  }
+  if (req.body.tag != null) {
+    res.article.tag = req.body.tag;
+  }
+  if (req.body.link != null) {
+    res.article.link = req.body.link;
   }
   try {
     const updatedArticle = await res.article.save();

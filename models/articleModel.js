@@ -16,6 +16,10 @@ let articleModel = new Schema({
     type: String,
     required: true,
   },
+  year:{
+    type: String,
+    required: true,
+  },
   color: {
     type: String,
     required: true,
