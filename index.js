@@ -4,7 +4,7 @@ require('dotenv').config();
 //Connect Mongoose package
 let mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/articles');
+mongoose.connect('mongodb://127.0.0.1:27017/articles');
 
 //Connect package with web server
 const express = require('express');
