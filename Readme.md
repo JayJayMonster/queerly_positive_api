@@ -4,9 +4,9 @@
 
 Queerly Positive is a positive news application that aims to provide a safe and uplifting space for the LGBTQ+ community. It curates and showcases positive news stories, articles, and content related to the LGBTQ+ community, promoting inclusivity, acceptance, and celebration of diversity.
 
-### How Queerly Positive Works
+### How the API Works
 
-Queerly Positive is built using the Nuxt.js framework and Tailwind CSS. It uses an API to gather and curate positive news stories and content related to the LGBTQ+ community. The application provides a user-friendly interface for browsing, filtering and exploring these stories.
+Using JavaScript, Express, and MongoDB, we have a basic CRUD (Create, Read, Update, Delete) API that follows the Model-View-Controller (MVC) architectural pattern. The API uses a Model, Routes, and a Controller to handle data operations.
 
 ## Getting Started
 
